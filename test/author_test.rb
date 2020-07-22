@@ -32,26 +32,7 @@ class AuthorTest < Minitest::Test
     jane_eyre = charlotte_bronte.write("Jane Eyre", "October 16, 1847")
     assert_equal [jane_eyre], charlotte_bronte.books
     villette = charlotte_bronte.write("Villette", "1853")
-    assert_equal [jane_eyre, villette], charlotte_bronte.books 
+    assert_equal [jane_eyre, villette], charlotte_bronte.books
   end
 
 end
-
-# ## Iteration 2
-#
-# Use TDD to create an `Author` class that responds to the following interaction pattern.
-#
-# The `write` method must take two Strings as arguments and return an instance of `Book`.
-
-# #=> #<Book:0x00007fb896e22538...>
-#
-# pry(main)> jane_eyre.class
-# #=> Book
-#
-# pry(main)> jane_eyre.title
-# #=> "Jane Eyre"
-#
-#
-# pry(main)> charlotte_bronte.books
-# #=> [#<Book:0x00007fb896e22538...>, #<Book:0x00007fb8980aaca0...>]
-# ```
